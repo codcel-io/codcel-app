@@ -14,7 +14,6 @@ This repository hosts the **official binary releases** of Codcel Desktop for mac
 
 ### Windows
 - 👉 [Download x64](https://github.com/codcel-io/codcel-app/releases/tag/release-0.1.5)
-- 👉 [Download arm64](https://github.com/codcel-io/codcel-app/releases/tag/release-0.1.5)
 
 ### macOS
 macOS builds are coming soon.

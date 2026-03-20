@@ -16,7 +16,8 @@ This repository hosts the **official binary releases** of Codcel Desktop for mac
 - 👉 [Download x64](https://github.com/codcel-io/codcel-app/releases/tag/release-0.1.5)
 
 ### macOS
-macOS builds are coming soon.
+- 👉 [Download for Apple Silicon (M1/M2/M3/M4..)](https://github.com/codcel-io/codcel-app/releases/tag/release-0.1.5)
+- 👉 [Download for Intel](https://github.com/codcel-io/codcel-app/releases/tag/release-0.1.5)
 
 ### Linux
 Linux builds are coming soon.
@@ -83,6 +84,24 @@ Depending on your security settings, macOS may block the application because it 
    5. Confirm “Open” when prompted
 
 After this, macOS will trust the app and you can launch it normally.
+
+### Keychain Access Prompt on Updates
+
+Codcel Desktop securely stores your login credentials in the macOS Keychain — the same built-in system that Safari, Mail, and other macOS apps use to keep your passwords safe. The keychain entry is named **"Codcel"**.
+
+When you install a new version of Codcel Desktop, macOS may ask you to re-authorize the app to access your saved login credentials. This is standard macOS security behavior — it happens because each new build has a slightly different code signature, so macOS confirms that you're happy for the updated app to read your stored credentials.
+
+You'll see a prompt like this:
+
+![Keychain access prompt](docs/images/mac-os-1.png)
+
+Simply enter your Mac login password and click **Always Allow**. You may see the prompt a second time — just repeat the same steps:
+
+![Keychain access prompt (second)](docs/images/mac-os-2.png)
+
+After that, Codcel Desktop will work normally without any further prompts until the next update.
+
+> **Note:** Once Codcel Desktop is signed with an Apple Developer certificate, this keychain prompt will no longer appear on updates. Until then, this is simply macOS doing its job — keeping your credentials protected and making sure you consent before any app accesses them.
 
 ---
 

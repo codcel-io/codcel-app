@@ -13,14 +13,16 @@ This repository hosts the **official binary releases** of Codcel Desktop for mac
 ## 🚀 Latest Downloads
 
 ### Windows
-- 👉 [Download x64](https://github.com/codcel-io/codcel-app/releases/tag/release-0.1.5)
+- 👉 [Download x64](https://github.com/codcel-io/codcel-app/releases/tag/release-0.1.7)
 
 ### macOS
-- 👉 [Download for Apple Silicon (M1/M2/M3/M4..)](https://github.com/codcel-io/codcel-app/releases/tag/release-0.1.5)
-- 👉 [Download for Intel](https://github.com/codcel-io/codcel-app/releases/tag/release-0.1.5)
+- 👉 [Download for Apple Silicon (M1/M2/M3/M4..)](https://github.com/codcel-io/codcel-app/releases/tag/release-0.1.7)
+- 👉 [Download for Intel](https://github.com/codcel-io/codcel-app/releases/tag/release-0.1.7)
 
 ### Linux
 Linux builds are coming soon.
+
+📝 See [RELEASES.md](./RELEASES.md) for what's new in each version.
 
 ---
 

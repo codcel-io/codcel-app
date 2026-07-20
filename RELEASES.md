@@ -5,6 +5,25 @@ For binary downloads, see the [README](./README.md) or visit the [releases page]
 
 ---
 
+## release-0.1.8
+_The "work with whole tables" release._
+
+Codcel Desktop 0.1.8 moves past single-cell inputs and outputs. You can now feed whole cell **ranges** into a transpiled model, spill **2-D array results** the way Excel's dynamic arrays do, and use Excel's full family of **database functions** — all with sharper error handling and cleaner generated code across every target language.
+
+### New Features
+- **Range inputs** — Define inputs as ranges (e.g. `A5:B25`), not just single cells, so one transpiled function can take an entire table of inputs at once.
+- **Dynamic arrays & spill ranges** — Formulas that produce a range of results now transpile and evaluate correctly, tracking how values spill across a 2-D region just like Excel.
+- **Database functions** — Excel's D-function family (`DGET`, `DSUM`, `DCOUNT`, `DAVERAGE`, `DMAX`, `DMIN` and the rest) is now transpiled and supported in the calculation engine, letting a formula query a labelled table by criteria.
+
+### Improvements
+- **New information functions** — `ERROR.TYPE` and `ISNA` let you identify specific errors and tell failed lookups apart from other formula errors.
+- **Sharper error handling** — `IFERROR` over a 2-D range now expands per-cell fallback correctly, and errors from database functions are picked up by `ISERROR`, `ISERR` and `ERROR.TYPE`.
+- **Cleaner generated code** — Language-specific fixes across Java, C#, Visual Basic, WASM and the Dioxus desktop templates, plus correct string arrays in every target language.
+
+[Download release-0.1.8 →](https://github.com/codcel-io/codcel-app/releases/tag/release-0.1.8)
+
+---
+
 ## release-0.1.7
 
 _The "bring your data in" release._
